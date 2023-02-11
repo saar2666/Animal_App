@@ -4,9 +4,7 @@
 # Overview
 Android application for tourists that displays information about animals
 
-Requirements and Goals
-
-The app written on Android Studio using the latest updates
+The app written on Android Studio using java
 
 API 32
 
