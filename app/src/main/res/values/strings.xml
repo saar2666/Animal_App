@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AnimalsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="already_have_an_account_login">Already have an account? <font color="#48bcc9"> Login </font> </string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account?<font color="#48bcc9"> Sign Up </font></string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyA74Qus3fRB7KZE3Lei_QdL17PIXV9ql0Y</string>
+</resources>

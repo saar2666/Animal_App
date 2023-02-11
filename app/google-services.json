@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "583496386525",
+    "project_id": "animal-app-a272e",
+    "storage_bucket": "animal-app-a272e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:583496386525:android:836d56e52aadbec7801834",
+        "android_client_info": {
+          "package_name": "com.animalsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "583496386525-mlfdr81sgellnjph96r8b4o8fmmcnikm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo3jZy4K6xRONCpJRSkJ0Cjrf4QTpvWU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "583496386525-mlfdr81sgellnjph96r8b4o8fmmcnikm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

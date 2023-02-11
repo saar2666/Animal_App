@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/signupFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.animalsapp.Fragments.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_blankFragment_to_signupFragment"
+            app:destination="@id/signupFragment"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_blankFragment_to_homeUserFragment"
+            app:destination="@id/homeUserFragment"
+            app:popUpTo="@+id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.animalsapp.Fragments.SignupFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signupFragment_to_blankFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/signupFragment"
+            app:popUpToInclusive="true" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/homeUserFragment"
+        android:name="com.animalsapp.Fragments.HomeFragment"
+        android:label="fragment_home_user"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeUserFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment" />
+        <action
+            android:id="@+id/action_homeUserFragment_to_addNewItemFragment"
+            app:destination="@id/addNewItemFragment" />
+        <action
+            android:id="@+id/action_homeUserFragment_to_addNewItemFragment2"
+            app:destination="@id/addNewItemFragment" />
+        <action
+            android:id="@+id/action_homeUserFragment_to_editLongDescriptionFragment"
+            app:destination="@id/editLongDescriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animalDetailsFragment"
+        android:name="com.animalsapp.Fragments.AnimalDetailsFragment"
+        android:label="fragment_animal_details"
+        tools:layout="@layout/fragment_animal_details" >
+        <action
+            android:id="@+id/action_animalDetailsFragment_to_editLongDescriptionFragment"
+            app:destination="@id/editLongDescriptionFragment" />
+        <action
+            android:id="@+id/action_animalDetailsFragment_to_addNewItemFragment"
+            app:destination="@id/addNewItemFragment" />
+        <action
+            android:id="@+id/action_animalDetailsFragment_to_homeUserFragment"
+            app:destination="@id/homeUserFragment"
+            app:popUpTo="@+id/homeUserFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addNewItemFragment"
+        android:name="com.animalsapp.Fragments.AddNewItemFragment"
+        android:label="fragment_add_new_item"
+        tools:layout="@layout/fragment_add_new_item" >
+        <action
+            android:id="@+id/action_addNewItemFragment_to_homeUserFragment"
+            app:destination="@id/homeUserFragment"
+            app:popUpTo="@+id/homeUserFragment"
+            app:popUpToInclusive="true"
+            />
+        <action
+            android:id="@+id/action_addNewItemFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment"
+            app:popUpTo="@+id/animalDetailsFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addNewItemFragment_to_homeUserFragment2"
+            app:destination="@id/homeUserFragment"
+            app:popUpTo="@+id/homeUserFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editLongDescriptionFragment"
+        android:name="com.animalsapp.Fragments.EditLongDescriptionFragment"
+        android:label="fragment_edit_long_description"
+        tools:layout="@layout/fragment_edit_long_description" >
+        <action
+            android:id="@+id/action_editLongDescriptionFragment_to_homeUserFragment"
+            app:destination="@id/homeUserFragment"
+            app:popUpTo="@+id/homeUserFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_editLongDescriptionFragment_to_animalDetailsFragment"
+            app:destination="@id/animalDetailsFragment"
+            app:popUpTo="@+id/animalDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+
+</navigation>
